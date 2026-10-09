@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: taskflow-config
+data:
+  DB_HOST: postgres-service
+  DB_PORT: "5432"
+  DB_NAME: taskflow_db
+  DB_USER: taskflow_admin
+  FLASK_ENV: production
